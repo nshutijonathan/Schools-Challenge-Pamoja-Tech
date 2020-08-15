@@ -1,0 +1,19 @@
+{
+  "name": "schools-challenge-pamoja-tech",
+  "version": "1.0.0",
+  "description": "This is an api to provide some information regarding schools in Rwanda.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nshutijonathan/Schools-Challenge-Pamoja-Tech.git"
+  },
+  "author": "Jonathan Nshuti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nshutijonathan/Schools-Challenge-Pamoja-Tech/issues"
+  },
+  "homepage": "https://github.com/nshutijonathan/Schools-Challenge-Pamoja-Tech#readme"
+}
