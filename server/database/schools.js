@@ -1,11 +1,12 @@
-let schools = [
+let schoolsList = [
   {
     id: 1,
     name: "Excella School",
     type: "primary",
     location: "Kimironko",
     telephone: "+250-788306085",
-    is_internation: false,
+    is_allowed_to_reopen: false,
+    is_international: false,
   },
   {
     id: 2,
@@ -13,7 +14,8 @@ let schools = [
     type: "primary",
     location: "Kigali",
     telephone: "+250-252576635",
-    is_internation: true,
+    is_allowed_to_reopen: false,
+    is_international: true,
   },
   {
     id: 3,
@@ -21,7 +23,8 @@ let schools = [
     type: "primary",
     location: "Nyandungu Rwamagana Road",
     telephone: "+250 (0) 252 584754",
-    is_internation: false,
+    is_allowed_to_reopen: false,
+    is_international: false,
   },
   {
     id: 4,
@@ -29,7 +32,8 @@ let schools = [
     type: "primary",
     location: "Nyarutarama",
     telephone: "+250 (0) 252 580746",
-    is_internation: false,
+    is_allowed_to_reopen: false,
+    is_international: false,
   },
   {
     id: 5,
@@ -37,7 +41,8 @@ let schools = [
     type: "primary",
     location: "Nyarutarama",
     telephone: "+250 (0) 252 580746",
-    is_internation: false,
+    is_allowed_to_reopen: false,
+    is_international: false,
   },
   {
     id: 6,
@@ -45,7 +50,8 @@ let schools = [
     type: "primary",
     location: " Kinunga",
     telephone: "+250-78522720",
-    is_internation: false,
+    is_allowed_to_reopen: false,
+    is_international: false,
   },
   {
     id: 7,
@@ -53,7 +59,8 @@ let schools = [
     type: "primary",
     location: " Camp Kigali",
     telephone: "+250-788453170",
-    is_internation: false,
+    is_allowed_to_reopen: false,
+    is_international: false,
   },
   {
     id: 8,
@@ -61,7 +68,8 @@ let schools = [
     type: "secondary",
     location: " Kigali",
     telephone: "+250 (0) 252 585214",
-    is_internation: false,
+    is_allowed_to_reopen: false,
+    is_international: false,
   },
   {
     id: 9,
@@ -69,7 +77,8 @@ let schools = [
     type: "secondary",
     location: "Musanze, Rwanda",
     telephone: "+250 (0) 252 55108807",
-    is_internation: false,
+    is_allowed_to_reopen: false,
+    is_international: false,
   },
   {
     id: 10,
@@ -77,7 +86,8 @@ let schools = [
     type: "secondary",
     location: "Kigali, Rwanda",
     telephone: "+250 772 506438",
-    is_internation: false,
+    is_allowed_to_reopen: false,
+    is_international: false,
   },
   {
     id: 11,
@@ -85,7 +95,8 @@ let schools = [
     type: "secondary",
     location: "Kimicanga,Gasabo District",
     telephone: "+250 (0) 252 574485",
-    is_internation: false,
+    is_allowed_to_reopen: false,
+    is_international: false,
   },
   {
     id: 12,
@@ -93,7 +104,8 @@ let schools = [
     type: "secondary",
     location: "Nyandungu Rwamagana Road",
     telephone: "+250 (0) 252 584754",
-    is_internation: false,
+    is_allowed_to_reopen: false,
+    is_international: false,
   },
   {
     id: 13,
@@ -101,7 +113,8 @@ let schools = [
     type: "international",
     location: "Caisse Sociale Estates",
     telephone: "+250-783307282",
-    is_internation: true,
+    is_allowed_to_reopen: false,
+    is_international: true,
   },
   {
     id: 14,
@@ -109,7 +122,8 @@ let schools = [
     type: "international",
     location: "Green house, Avenue Du Lac Kivu",
     telephone: "+250-784577880",
-    is_internation: true,
+    is_allowed_to_reopen: false,
+    is_international: true,
   },
   {
     id: 15,
@@ -117,7 +131,8 @@ let schools = [
     type: "international",
     location: "Avenue Du Commerce",
     telephone: "+250788302899",
-    is_internation: true,
+    is_allowed_to_reopen: false,
+    is_international: true,
   },
   {
     id: 16,
@@ -125,7 +140,8 @@ let schools = [
     type: "international",
     location: "Located at Kabuga",
     telephone: "+250 788 305 655",
-    is_internation: true,
+    is_allowed_to_reopen: false,
+    is_international: true,
   },
   {
     id: 17,
@@ -133,7 +149,8 @@ let schools = [
     type: "international",
     location: "Behind Uganda High Commission, Nyarutama",
     telephone: "+250-280382298",
-    is_internation: true,
+    is_allowed_to_reopen: false,
+    is_international: true,
   },
   {
     id: 18,
@@ -141,7 +158,8 @@ let schools = [
     type: "university",
     location: "provinces",
     telephone: "N/A",
-    is_internation: true,
+    is_allowed_to_reopen: false,
+    is_international: true,
   },
   {
     id: 19,
@@ -149,7 +167,8 @@ let schools = [
     type: "university",
     location: "provinces",
     telephone: "N/A",
-    is_internation: true,
+    is_allowed_to_reopen: false,
+    is_international: true,
   },
   {
     id: 20,
@@ -157,6 +176,8 @@ let schools = [
     type: "university",
     location: "provinces",
     telephone: "N/A",
-    is_internation: true,
+    is_allowed_to_reopen: false,
+    is_international: true,
   },
 ];
+export default schoolsList;

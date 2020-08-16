@@ -3,8 +3,14 @@
   "version": "1.0.0",
   "description": "This is an api to provide some information regarding schools in Rwanda.",
   "main": "server.js",
+  "engines": {
+    "node": "12.18.2",
+    "npm": "6.14.5"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel-node server/server.js",
+    "dev": " nodemon --exec babel-node --presets @babel/preset-env  server/server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +21,18 @@
   "bugs": {
     "url": "https://github.com/nshutijonathan/Schools-Challenge-Pamoja-Tech/issues"
   },
-  "homepage": "https://github.com/nshutijonathan/Schools-Challenge-Pamoja-Tech#readme"
+  "homepage": "https://github.com/nshutijonathan/Schools-Challenge-Pamoja-Tech#readme",
+  "dependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.1",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/register": "^7.10.5",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4",
+    "swagger-jsdoc": "^4.0.0",
+    "swagger-ui-express": "^4.1.4"
+  }
 }

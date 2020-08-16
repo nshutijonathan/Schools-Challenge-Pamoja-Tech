@@ -1,0 +1,11 @@
+import express from "express";
+const router = express.Router();
+import Schools from "../controllers/schools";
+import Questions from "../controllers/questions";
+router.get("/api/v1/schools", Schools.getSchools);
+router.get("/api/v1/school/search/:name", Schools.getSchool);
+router.get("/api/v1/schools/primaries", Schools.getPrimaries);
+router.get("/api/v1/schools/secondaries", Schools.getSecondaries);
+router.get("/api/v1/schools/universities", Schools.getUniversities);
+router.get("/api/v1/questions", Questions.displayQuestions);
+export default router;

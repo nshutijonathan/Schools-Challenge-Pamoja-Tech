@@ -1,0 +1,162 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Schools in Rwanda",
+    "description": "",
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+  "host": "pamoja-chall.herokuapp.com",
+  "basePath": "/api/v1",
+  "tags": [
+    {
+      "name": "schools",
+      "description": "API for schools in Rwanda"
+    }
+  ],
+  "schemes": ["https", "http"],
+  "consumes": ["application/json"],
+  "produces": ["application/json"],
+  "paths": {
+    "/schools": {
+      "get": {
+        "tags": ["Schools"],
+        "description": "all schools in Rwanda",
+        "produces": ["application/json"],
+        "responses": {}
+      }
+    },
+    "/school/search/{name}": {
+      "parameters": [
+        {
+          "name": "name",
+          "in": "path",
+          "required": true,
+          "description": "name of the school we want to find",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "tags": ["School"],
+        "summary": "Get school with the given name",
+        "responses": {
+          "200": {
+            "description": "school is found",
+            "schema": {
+              "properties": {
+                "status": {
+                  "type": "integer"
+                },
+                "data": {
+                  "type": "array",
+                  "$ref": "#/definitions/Car"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "School not found",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/schools/primaries": {
+      "get": {
+        "tags": ["Schools"],
+        "summary": "Get all primary schoolss",
+        "responses": {
+          "200": {
+            "description": "schools are found",
+            "schema": {
+              "properties": {
+                "status": {
+                  "type": "integer"
+                },
+                "data": {
+                  "type": "array",
+                  "$ref": "#/definitions/Car"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "School not found",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/schools/secondaries": {
+      "get": {
+        "tags": ["Schools"],
+        "summary": "Get all secondary schoolss",
+        "responses": {
+          "200": {
+            "description": "schools are found",
+            "schema": {
+              "properties": {
+                "status": {
+                  "type": "integer"
+                },
+                "data": {
+                  "type": "array",
+                  "$ref": "#/definitions/Car"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "School not found",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/schools/universities": {
+      "get": {
+        "tags": ["Schools"],
+        "summary": "Get all university  schoolss",
+        "responses": {
+          "200": {
+            "description": "schools are found",
+            "schema": {
+              "properties": {
+                "status": {
+                  "type": "integer"
+                },
+                "data": {
+                  "type": "array",
+                  "$ref": "#/definitions/Car"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "School not found",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/questions": {
+      "get": {
+        "tags": ["Questions"],
+        "description": "Frequently asked questions regarding shools reopening ",
+        "produces": ["application/json"],
+        "responses": {}
+      }
+    }
+  }
+}
